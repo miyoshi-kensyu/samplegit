@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>僕の仲間募集フォーム</title>
+</head>
+<body>
+  <h1>僕の仲間募集フォーム</h1>
+  <form action="receive.html" method="post">
+    <dl>
+      <dt>お名前</dt>
+      <dd>
+        <input type="text" name="your_name">
+      </dd>
+      <dt>メールアドレス</dt>
+      <dd>
+        <input type="text" name="your_mail">
+      </dd>
+      <dt>性別</dt>
+      <dd>
+        <ul>
+          <li><input type="radio" name="gender" value="男">男性</li>
+          <li><input type="radio" name="gender" value="女">女性</li>
+        </ul>
+      </dd>
+      <dt>希望する職種</dt>
+      <dd>
+        <select name="job">
+          <option value="Webディレクター">Webディレクター</option>
+          <option value="Webデザイナー">Webデザイナー</option>
+          <option value="Webプログラマー">Webプログラマー</option>
+          <option value="フロントエンド・エンジニア">フロントエンド・エンジニア</option>
+        </select>
+      </dd>
+      <dt>出来ること（複数選択可）</dt>
+      <dd>
+        <ul>
+          <li><input type="checkbox" name="skill" value="HTML">HTML</li>
+          <li><input type="checkbox" name="skill" value="CSS">CSS</li>
+          <li><input type="checkbox" name="skill" value="JavaScript">JavaScript</li>
+          <li><input type="checkbox" name="skill" value="PHP">PHP</li>
+          <li><input type="checkbox" name="skill" value="SQL">SQL</li>
+          <li><input type="checkbox" name="skill" value="Photoshop">Photoshop</li>
+          <li><input type="checkbox" name="skill" value="Illustrator">Illustrator</li>
+        </ul>
+      </dd>
+      <dt>メッセージ</dt>
+      <dd>
+        <textarea name="message" cols="40" rows="8"></textarea>
+      </dd>
+    </dl>
+    <p><input type="submit" value="送信する"></p>
+  </form>
+</body>
+</html>
