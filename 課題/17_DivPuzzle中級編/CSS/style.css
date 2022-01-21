@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+body{
+  width:400px;
+  height:450px;
+}
+
+.clearfix::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.red--box{
+  background:#ff0011;
+  width:400px;
+  height:100px;
+}
+
+.green--box{
+  background:#00ff51;
+  width:150px;
+  height:250px;
+  float:left;
+}
+
+.contents{
+  width:250px;
+  height:250px;
+  background:black;
+  float:right;
+}
+
+
+.purple--box{
+  background:#cc00db;
+  width:150px;
+  height:50px;
+  float:right;
+}
+
+.blue--box{
+  background:#0093b7;
+  width:150px;
+  height:100px;
+  float:right;
+}
+
+
+.orange--box{
+  background:#ff9e6b;
+  width:100px;
+  height:150px;
+  float:right;
+}
+
+.brown--box{
+  background:#8c2727;
+  width:250px;
+  height:100px;
+}
+
+.yellow--box{
+  background:#fff700;
+  width:400px;
+  height:100px;
+}

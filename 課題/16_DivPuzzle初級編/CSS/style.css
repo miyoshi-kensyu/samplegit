@@ -1,0 +1,32 @@
+@charset  "UTF-8";
+
+.red--box{
+  background:#ff0000;
+  width:400px;
+  height:100px;
+}
+
+.clearfix::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.green--box{
+  background:#00ff1e;
+  width:150px;
+  height:250px;
+  float:left;
+}
+
+.blue--box{
+  background:#3300ff;
+  width:250px;
+  height:250px;
+  float:left;
+}
+
+.yellow--box{
+  background:#ffe600;
+  width:400px;
+  height:100px;
+}
