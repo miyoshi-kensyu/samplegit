@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.blowing--box {
+  width: 500px;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  background: #fad296;
+  border: solid 5px #8f5a0a;
+  border-radius: 30px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.blowing--box:before,.blowing--box:after {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  left: 30px;
+}
+
+.blowing--box:before {
+  border-top: 20px solid #8f5a0a;
+  bottom: -45px;
+}
+
+.blowing--box:after {
+  border-top: 20px solid #fad296;
+  bottom: -38px;
+}

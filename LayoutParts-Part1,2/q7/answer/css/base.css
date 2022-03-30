@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+h1, h2, h3 {
+  text-align: center;
+  margin: 40px 0;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.sub--title {
+  font-size: 24px;
+}
+
+.table--area {
+  margin-top: 30px;
+}
+
+.wrapper {
+  padding: 0 3%;
+}

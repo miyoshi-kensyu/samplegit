@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+h1, h2, h3 {
+  text-align: center;
+  margin: 40px 0;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.sub--title {
+  font-size: 24px;
+}
+
+.wrapper {
+  width: 1100px;
+  margin: 0 auto;
+}
