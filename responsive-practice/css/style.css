@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+.q1-box{
+  background:#ff0000;
+  width:400px;
+  height:400px;
+  margin:0 auto;
+}
+
+@media screen and (max-width: 960px) {
+  .q1-box{
+    width:200px;
+    height:200px;
+  }
+}
+
+.q2-box{
+  background:#ff0000;
+  width:300px;
+  height:300px;
+  margin:0 auto;
+}
+
+@media screen and (max-width: 960px){
+  .q2-box{
+    background:#007bff;
+  }
+}
+
+.margin-box{
+  display:flex;
+  justify-content: center;
+}
+
+.q3-box{
+  width:300px;
+  height:300px;
+
+}
+
+.blue{
+  background:#0008ff;
+  margin-right:75px;
+}
+
+.green{
+  background:#22ff00;
+  margin-left:75px;
+}
+
+@media screen and (max-width: 960px){
+  .blue{
+    margin-right:25px;
+  }
+  .green{
+    margin-left:25px;
+  }
+}
+
+.center{
+  text-align:center;
+}
+
+.float-box{
+  display: inline-block;
+  margin:0 auto;
+} 
+
+
+.q4-box{
+  width:300px;
+  height:300px;
+  float:left;
+}
+
+.q4-red{
+  background:#ff0000;
+  
+}
+
+.q4-blue{
+  background:#0008ff;
+}
+
+@media screen and (max-width: 960px){
+  .q4-box{
+    clear:both;
+  } 
+}
+
+.q5-flex-container{
+  display:flex; 
+  justify-content:center; 
+}
+
+.q5-box{
+  width:300px;
+  height:300px;
+  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.q5-red{
+  background:#ff0000;
+}
+
+.q5-blue{
+  background:#0008ff;
+}
+
+.q5-orange{
+  background:#ff8400;
+}
+
+
+@media screen and (max-width:960px){
+  .q5-flex-container{
+    flex-direction:row-reverse;
+  }
+}
+
+.q6-flex-container{
+  display:flex; 
+  justify-content:center; 
+}
+
+.q6-box{
+  width:300px;
+  height:300px;
+  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.q6-green{
+  background:#00ff51;
+}
+
+.q6-yellow{
+  background:#d4ff00;
+}
+
+.q6-pink{
+  background:#ff00e1;
+}
+
+@media screen and (max-width: 960px){
+  .q6-pink{
+  order: -1;  
+  }
+}
+
+.q7-flex-container{
+  display:flex; 
+  justify-content:center; 
+}
+
+.q7-box{
+  width:300px;
+  height:300px;
+  display:flex;
+  justify-content: center;
+}
+
+.q7-red{
+  background:#ff0000;
+}
+
+.q7-blue{
+  background:#0008ff;
+  display:none;
+}
+
+.q7-green{
+  background:#00ff51;
+}
+
+@media screen and (max-width: 960px){
+  .q7-red{
+    display:none;
+  }
+
+  .q7-blue{
+    display:flex;
+  }
+}
