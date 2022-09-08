@@ -1,0 +1,13 @@
+@mixin fontDesign {
+  $colorValue: true;
+  
+  @if $colorValue{
+    color:#ffffff;
+  }@else{
+    color:#111111;
+  }
+}
+
+.font{
+  @include fontDesign;
+}

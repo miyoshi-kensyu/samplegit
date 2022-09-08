@@ -1,0 +1,31 @@
+.inner {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+  }
+  @mixin btn($color) {
+  display: block;
+  padding: 20px 30px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: $color;
+  text-decoration: none;
+  text-align: center;
+  margin:20px 0;
+  }
+  $map: (
+  "line": #00B900,
+  "instagram": #CF2E92,
+  "facebook": #71d0f2,
+  "twitter": #1DA1F2,
+  );
+  $snsClass:"line","instagram","facebook","twitter";
+
+  //配列にたいして繰り返し処理,@mixinのbtnに反映
+@each $snsClass, $value in $map{
+  .#{$snsClass}{
+    @include btn($value)
+  }
+}
