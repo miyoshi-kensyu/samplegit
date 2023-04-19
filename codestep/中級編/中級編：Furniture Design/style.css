@@ -1,0 +1,341 @@
+@charset "UTF-8";
+/* 共通 */
+html{
+  font-size: 100%;
+}
+
+body{
+  color: #333;
+  font-size: 0.875rem;
+  min-height: 100vh;
+  position: relative;
+}
+
+a{
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover{
+  opacity: 0.7;
+}
+
+img{
+  max-width: 100%;
+}
+
+li{
+  list-style: none;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ヘッダー */
+#header{
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.site-title a{
+  width: 180px;
+  line-height: 1px;
+  display: block;
+}
+
+#navi{
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  color: #fff;
+  padding: 36px 50px;
+  z-index: 20;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+#navi a{
+  color: #fff;
+}
+
+#navi li{
+  margin-bottom: 14px;
+}
+
+/* イベント　クラス　open 付与 */
+
+.open #navi{
+  left: 0;
+  opacity: 1;
+}
+
+.toggle-btn{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 20;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.toggle-btn span{
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+
+.toggle-btn span:nth-child(1){
+  top: 10px;
+}
+
+.toggle-btn span:nth-child(2){
+  bottom: 10px;
+}
+
+.open .toggle-btn span{
+  background-color: #fff;
+}
+
+.open .toggle-btn span:nth-child(1){
+  transform: translateY(4px) rotate(-45deg);
+}
+
+.open .toggle-btn span:nth-child(2){
+  transform: translateY(-4px) rotate(45deg);
+}
+
+.mask{
+  display: none;
+  transition: all 0.5s;
+}
+
+.open .mask{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+  z-index: 10;
+  cursor: pointer;
+}
+
+
+
+/* top */
+#top{
+  padding-top: 80px;
+  padding-bottom: 160px;
+}
+
+.product-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-list li{
+  width: 23%;
+  margin-bottom: 40px;
+}
+
+.product-list img{
+  margin-bottom: 10px;
+}
+
+.product-list p{
+  font-size: 0.75rem;
+}
+
+.link-text{
+  display: block;
+  text-align: center;
+}
+
+#footer{
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+}
+
+.footer-menu{
+  display: flex;
+}
+
+.footer-menu li{
+  font-size: 0.75rem;
+  margin-right: 30px;
+}
+
+.copy-right{
+  font-size: 0.625rem;
+}
+
+
+/* product-page */
+.content{
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
+.page-title{
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+}
+
+.pagination li{
+  padding: 0 20px;
+}
+
+#about{
+  max-width: 100%;
+}
+
+#about p{
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+#company{
+  max-width: 600px;
+}
+
+#company dl{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#company dt{
+  width: 30%;
+  border-bottom: solid 1px #dcdbdb;
+  padding: 20px 10px;
+}
+
+#company dt:last-of-type{
+  border-bottom: none;
+}
+
+#company dd{
+  width: 70%;
+  border-bottom: solid 1px #dcdbdb;
+  padding: 20px 10px;
+}
+
+#company dd:last-child{
+  border-bottom: none;
+}
+
+#company .map{
+  filter:grayscale(1)
+}
+
+#company .map iframe{
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+.item{
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.item-img{
+  width: 50%;
+}
+
+.item-text{
+  width: 42%;
+}
+
+.item-text p{
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.item-text dl{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-text dt{
+  width: 30%;
+}
+
+.item-text dd{
+  width: 70%;
+}
+
+/* 次はハンバーガーメニューCSS　HTML　JS、レスポンシブ対応とitemの画面作成ｍ */
+@media screen and (max-width: 900px){
+  .product-list li{
+    width: 47%;
+  }
+
+  .item{
+    flex-direction: column;
+  }
+
+  .item-text{
+    width: 100%;
+  }
+
+  .item-img{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #company dl{
+    flex-direction: column;
+  }
+
+  #company dt{
+    width: 100%;
+    border-bottom: none;
+    padding: 5px;
+  }
+
+  #company dd{
+    width: 100%;
+    padding-top: 5px;
+  }
+
+  #footer{
+    flex-direction: column;
+  }
+
+  .footer-menu{
+    margin-bottom: 5px;
+  }
+}

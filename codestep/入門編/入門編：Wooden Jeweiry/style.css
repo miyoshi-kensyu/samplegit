@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+
+body {
+  color: #2d2d2d;
+  font-family: 'Crimson Text', serif;
+}
+
+a{
+  text-decoration: none;
+  color:#2d2d2d;
+}
+
+.main-vis{
+  width: 90vw;
+  margin:4% auto 0 auto;
+}
+
+.main-vis img{
+  width:100%;
+  vertical-align:bottom;
+}
+
+#header{
+  width: 90vw;
+  display: flex;
+  align-items:center;
+  padding:32px 0;
+  margin:0 auto 30px auto;
+}
+
+.site-title{
+  width: 110px;
+  line-height: 1px;
+  margin-right:50px;
+}
+
+.site-title a{
+  display:block;
+}
+
+.site-title img{
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.site-nav ul{
+  display: flex;
+  list-style: none;
+}
+
+.site-nav li{
+  font-size: 0.875rem;
+  margin-right: 30px;
+}
+
+.container{
+  max-width: 1000px;
+  margin:0 auto;
+  padding: 0 18px;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  margin-bottom:60px;
+}
+
+.content .img{
+  width:50%;
+}
+
+.content img{
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.text{
+  width: 50%;
+  padding: 0 7%;
+}
+
+.text h2{
+  font-size: 1.5rem;
+  font-weight:normal;
+  margin-bottom:4px;
+}
+
+.text span{
+  display: inline-block;
+  margin-bottom:25px;
+}
+
+#footer{
+  display: flex;
+  justify-content: space-between;
+  font-size:0.875rem;
+  padding:20px 0;
+}
+
+#footer .logo{
+  width: 110px;
+}
+
+#footer img{
+  max-width: 100%;
+  vertical-align:bottom;
+}
+
+@media screen and (max-width:767px){
+  .main-vis{
+    width:100%;
+    margin:0;
+  }
+
+  .main-vis img{
+    width:100%;
+    height:50vh;
+    object-fit:cover;
+  }
+
+  #header{
+    width:100%;
+    padding:20px 18px;
+  }
+  
+  .content{
+    flex-direction:column;
+  }
+
+  .content .img{
+    width:100%;
+    margin-bottom:10px;
+  }
+
+  .content .text{
+    width:100%;
+    padding:0;
+  }
+  
+  #work{
+    flex-direction:column-reverse;
+  }
+}
